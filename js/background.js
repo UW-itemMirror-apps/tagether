@@ -220,40 +220,17 @@ function dropboxSearch(keyword, resultSet, start, flag, charList, tab, initResul
 					//initResult.push(start);
 
 					console.log('current keyword initResult: %o', initResult);
-					//console.log('resultList in return function: %o', initResult[1]);
-					//console.log('resultSet in return function: %o', initResult[2]);
-
 					
-						// var arr = grabword(charList, start, '');
-						// var lKeyword = arr[0];
-						// var mark = arr[1];
-						// var dropbox = dropboxSearch(lKeyword, resultSet, mark, charList, tab, initResult);
-
-						// console.log("if -- I want to see the succeed keyword dropboxSearch result__dropbox: %o", dropbox);
-						//console.log('succeed keyword initResult in if function: %o', initResult);
-
-						
-
-						// var intersection = intersect(initResult, succeedResult);
-
-						// if(intersection.length > 3) {
-						// 	var arr = grabword(charList, start, '');
-						// 	var lKeyword = arr[0];
-						// 	var mark = arr[1];
-						// 	dropboxSearch(lKeyword, resultSet, start, charList, tab);
-
-						// }
-					
-						console.log("charList in else function: %o", charList);
-						console.log("mark in else function: %o", start);
-						console.log("tab in else function: %o", tab);
+						//console.log("charList in else function: %o", charList);
+						//console.log("mark in else function: %o", start);
+						//console.log("tab in else function: %o", tab);
 						var arr = grabword(charList, start, '');
 						var keyword = arr[0];
-						console.log("keyword in else function: %o", keyword);
+						//console.log("keyword in else function: %o", keyword);
 						var mark = arr[1];
-						console.log("mark in else function: %o", mark);
+						//console.log("mark in else function: %o", mark);
 						var stopFlag = arr[2];
-						console.log("stopFlag in else function: %o", stopFlag);
+						//console.log("stopFlag in else function: %o", stopFlag);
 						if((keyword == '' && mark === undefined) || (keyword == '' && mark == (charList.length - 1))){
 							//console.log('final initResult: %o', initResult);
 
