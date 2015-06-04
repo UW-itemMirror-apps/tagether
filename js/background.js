@@ -281,37 +281,12 @@ function dropboxSearch(keyword, resultSet, start, flag, charList, tab, initResul
 									}else {
 										dropboxSearch(keyword2, resultSet, mark2, stopFlag2, charList, tab, initResult);
 									}
-
 								
 							}
-							
-
-							//console.log("else -- I want to see the succeed keyword dropboxSearch result__dropbox: %o", dropbox);
 
 						}
-						
-
-
-					
-					
-					// if(Object.keys(resultSet).length > 3) {
-					// 	var arr = grabword(charList, start, '');
-					// 	var keyword = arr[0];
-					// 	var mark = arr[1];
-					// 	dropboxSearch(keyword, resultSet, mark, charList, tab);
-					// }else {
-					// 	console.log("charList in else function: %o", charList);
-					// 	console.log("mark in else function: %o", start);
-					// 	console.log("tab in else function: %o", tab);
-					// 	var arr = grabword(charList, start, '');
-					// 	var keyword = arr[0];
-					// 	console.log("keyword in else function: %o", keyword);
-					// 	var mark = arr[1];
-					// 	console.log("mark in else function: %o", mark);
-					// 	dropboxSearch(keyword, resultSet, mark, charList, tab);
-					// }
 				}
-				//console.log('current keyword initResult in return function: %o', initResult);
+				
 			}
 		})(keyword, resultSet, start, flag, charList, tab, initResult));
 	}else {
