@@ -193,83 +193,8 @@ function findSomeFiles(words, tab) {
 
 	console.log('formerWordResult: %o', formerWordResult);
 
-	// if (formerWordResult[1].length > 3){
-	// 	var arr = grabword(charList, mark, '');
-	// 	var lKeyword = arr[0];
-	// 	var start = arr[1];
-	// 	var succeedWordResult = dropboxSearch(lKeyword, resultSet, start, charList, tab, initResult);
-
-	// 	console.log("if -- I want to see the succeed keyword dropboxSearch result: %o", succeedWordResult);
-	// }else {
-	// 	var arr = grabword(charList, mark, '');
-	// 	var lKeyword = arr[0];
-	// 	var start = arr[1];
-
-	// 	var succeedWordResult = dropboxSearch(keyword, resultSet, start, charList, tab, initResult);
-
-	// 	console.log("else -- I want to see the succeed keyword dropboxSearch result: %o", succeedWordResult);
-	// }
-
-	// if(Object.keys(resultSet).length > 3) {
-	// 	var arr = grabword(charList, mark, keyword);
-	// 	var keyword = arr[0];
-	// 	var mark = arr[1];
-	// 	dropboxSearch(keyword, resultSet, tab);
-	// }else {
-	// 	console.log("charList in else function: %o", charList);
-	// 	var arr = grabword(charList, mark, '');
-	// 	var keyword = arr[0];
-	// 	console.log("keyword in else function: %o", keyword);
-	// 	var mark = arr[1];
-	// 	console.log("mark in else function: %o", mark);
-	// 	dropboxSearch(keyword, resultSet, tab);
-	// }
-
-
-	//var wordSet = filterKeyword(words);
-	//var searchCount = wordSet.length;
-	//console.log("Filtered Word Set", wordSet);
-	//for(var key in wordSet) {
-		//var keyword = wordSet[key];
-		
-	//}
-}
-
-// function dropboxSearch(){
-
-// }
-
-
-
-// function findSomeFile(words, tab) {  //words need to change to paragraph
-// 	var resultSet = {};
-// 	var initResult = [];
-// 	//filter keyword using stopwords
-// 	var charList = words.split('');
-// 	console.log('charList: %o', charList);
-// 	// var length = charList.length;
-// 	// var keyword = '';
-
 	
-
-
-// 	//var mark = 0;
-
-// 	var arr = grabword(charList, 0, '');
-
-// 	var keyword = arr[0];
-
-// 	var mark = arr[1];
-
-// 	var flag = arr[2];
-
-// 	if(!flag) {
-// 		dropboxSearch(keyword, resultSet, mark, charList, tab, initResult);
-// 	}else {
-// 		var arr = grabword(charList, 0, '');
-// 	}
-
-// }
+}
 
 
 function dropboxSearch(keyword, resultSet, start, flag, charList, tab, initResult) {
