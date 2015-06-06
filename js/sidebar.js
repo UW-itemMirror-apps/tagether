@@ -157,25 +157,6 @@ function addFolderIcon(msg) {
 		
 	}
 
-
-	// for(var key in textList) {
-	// 	var text = textList[key];
-	// 	console.log('text: %o', text);
-	// 	if(folderNames[text]) {
-
-	// 		if (folderNames[text].length == 1){
-	// 			text = "<b style='padding: 0 4px;'>" + text+ "</b>";
-	// 			selectedTextWindow.appendChild(createSingleIcon(folderNames[text]));
-	// 		} else {
-	// 			text = "<b style='padding: 0 4px;'>" + text+ "</b>";
-	// 			selectedTextWindow.appendChild(createMultipleIcon(folderNames[text]));
-	// 		}
-			
-	// 	}
-	// 	newTextList.push(text);
-	// 	selectedTextWindow.innerHTML += text +" ";
-	// }
-
 	//remove the spinner
 	var spinnerImage = document.querySelector('#spinnerImage');
 	spinnerImage.parentNode.removeChild(spinnerImage);	
