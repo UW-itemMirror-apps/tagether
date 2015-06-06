@@ -149,14 +149,7 @@ function addFolderIcon(msg) {
 					var multipleIcon = createMultipleIcon(matchFolders[i]);
 					
 					selectedTextWindow.appendChild(multipleIcon);
-
 					
-
-					//multipleIcon.addEventListener('click', toggleSidebar);
-					multipleIcon.onchange = function(){
-						console.log("click event ever firing up???????");
-						toggleSidebar();
-					};
 				}
 
 		}
