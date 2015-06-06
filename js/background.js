@@ -326,41 +326,6 @@ function dropboxSearch(keyword, resultSet, start, flag, charList, tab, initResul
 }
 
 
-// function addWord(charList, start, keyword){
-// 	var mark;
-
-// 	for(var c=start; c<length; c++){
-// 		if (charList[c] == 'a' || charList[c] == 'A' || charList[c] == 'b' || charList[c] == 'B' || charList[c] == 'c' || charList[c] == 'C' || charList[c] == 'd' || charList[c] == 'D' || charList[c] == 'e' || charList[c] == 'E' || charList[c] == 'f' || charList[c] == 'F' || charList[c] == 'g' || charList[c] == 'G' || charList[c] == 'H' || charList[c] == 'h' || charList[c] == 'i' || charList[c] == 'I' || charList[c] == 'J' || charList[c] == 'j' || charList[c] == 'k' || charList[c] == 'K' || charList[c] == 'L' || charList[c] == 'l' || charList[c] == 'M' || charList[c] == 'm' || charList[c] == 'N' || charList[c] == 'n' || charList[c] == 'o' || charList[c] == 'O' || charList[c] == 'p' || charList[c] == 'P' || charList[c] == 'q' || charList[c] == 'Q' || charList[c] == 'R' || charList[c] == 'r' || charList[c] == 'S' || charList[c] == 's' || charList[c] == 'T' || charList[c] == 't' || charList[c] == 'u' || charList[c] == 'U' || charList[c] == 'V' || charList[c] == 'v' || charList[c] == 'W' || charList[c] == 'w' || charList[c] == 'X' || charList[c] == 'x' || charList[c] == 'Y' || charList[c] == 'y' || charList[c] == 'z' || charList[c] == 'Z'){
-// 			keyword =+ charList[c];
-// 		}
-// 		if(charList[c] == ' ' || charList[c] == "," || charList[c] == '.'){
-// 			mark = c;
-// 			break;
-// 		}
-// 	}
-// 	return [keyword, mark];
-// }
-
-//function for intersection
-function intersect(a, b)
-{
-  var ai = bi= 0;
-  var intersection = [];
-
-  while( ai < a.length && bi < b.length ){
-     if      (a[ai] < b[bi] ){ ai++; }
-     else if (a[ai] > b[bi] ){ bi++; }
-     else /* they're equal */
-     {
-       intersection.push(ai);
-       ai++;
-       bi++;
-     }
-  }
-
-  return intersection;
-}
-
 function grabword(charList, start, keyword) {
 	var mark;
 
