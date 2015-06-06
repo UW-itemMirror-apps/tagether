@@ -21,24 +21,7 @@ function execute(msg) {
 		addFolderIcon(msg);
 	} else if (msg.action === 'saved') {
 		toggleSidebar();
-		// var alert = document.createElement('div');
-		// alert.id = "alert";
-		// alert.setAttribute('class', 'alert alert-info');
-		// alert.style.position = "fixed";
-		// alert.style.bottom = "30%";
-		// alert.style.zIndex = "9999999";
-		// alert.style.background = "#428bca";
-		// alert.style.left = "30%";
-		// alert.style.width = "300px";
-		// alert.style.height = "150px;"
-		// // alert.style.display = "none";
-		// alert.setAttribute('data-dismiss', 'alert');
-		// alert.setAttribute('aria-hidden', 'true');
-		// alert.innerHTML = "Saved Success";
-		// document.body.appendChild(alert);
-		// setTimeout(function(){
-		// 	alert.style.display = "none";
-		// }, 1500);
+		
 	}
 }
 
