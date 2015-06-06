@@ -353,17 +353,13 @@ function filter(keyword, start, flag, result, resultSet, initResult) {
 	var list = [];
 	for(var key in result) {
 		var r = result[key];
-		if (r.isFolder) {//if(r.isFolder && r.name == keyword) {
-			// var folderName = r.path.split("/").pop();
+		if (r.isFolder) {          //if(r.isFolder && r.name == keyword)
+			
 			resultList.push(r.path);
-			//resultSet.push(r.path);
+			
 		}
 	}
-	// if (resultList.length != 0){
-	// 	resultSet[keyword] = resultList;
-	// 	console.log('resultSet in filter function: %o', resultSet);
-	// }
-
+	
 	list.push(keyword);
 	list.push(resultList);
 	list.push(start);
