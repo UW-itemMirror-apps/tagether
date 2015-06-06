@@ -427,15 +427,12 @@ function updateSelectedText() {
 	var selectedText = getSelectedText();
 	console.log(selectedText);
 	if(selectedText !== undefined && (!(document.querySelector('#spinnerImage')))){
-		// if{
 			addSpinner();
-		//}
 	}
 	if(selectedTextWindow && selectedText) {
 		searchDropbox(selectedText);
 		selectedTextWindow.innerText = selectedText;
 	}
-	//addSpinner();
 }
 
 //passed a message back to background.js
@@ -488,8 +485,6 @@ function createSiderbarFrame() {
 	sidebarHTML.style.minHeight = "350px";
 	sidebarHTML.style.border = "5px solid black";
 	sidebarHTML.style.background = "#fff";
-	//sidebarHTML.style.opacity = "0.97";
-	//sidebarHTML.style.zIndex = "999999";
 	sidebarHTML.style.borderRadius="10px"
 	sidebarHTML.style.display = 'none';
 	return sidebarHTML;
