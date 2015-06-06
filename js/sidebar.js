@@ -3,7 +3,6 @@
 console.log(' item mirror on page script loaded for tab: %s', chrome.runtime.id);	
 
 chrome.runtime.onMessage.addListener(function(msg, sender, responseCallback){
-	//window.addEventListener('mouseup',updateSelectedText);
 	console.log('sender %o', sender);
 	execute(msg);
 });
