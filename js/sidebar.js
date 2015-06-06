@@ -136,9 +136,6 @@ function addFolderIcon(msg) {
 
 	console.log("matchFolders testing......: %o", matchFolders);
 
-
-	//var folderNames = createFolderNames(msg.message);
-	//console.log('folderNames: %o', folderNames);
 	var textList = selectedTextWindow.innerHTML.split('');
 	console.log('textList: %o', textList);
 	textList.push(' ');
@@ -146,16 +143,14 @@ function addFolderIcon(msg) {
 	for (var i=0; i< textList.length; i++){
 		if (matchFolders[i]){
 
-			//if(findStopwords(matchFolders[i][0]) == false){
-
 				if (matchFolders[i].length == 1){
 					selectedTextWindow.appendChild(createSingleIcon(matchFolders[i]));
 				} else {
 					var multipleIcon = createMultipleIcon(matchFolders[i]);
-					//console.log(multipleIcon);
+					
 					selectedTextWindow.appendChild(multipleIcon);
 
-					//multipleIcon.addEventListener('mouseover', createModal);
+					
 
 					//multipleIcon.addEventListener('click', toggleSidebar);
 					multipleIcon.onchange = function(){
@@ -163,8 +158,6 @@ function addFolderIcon(msg) {
 						toggleSidebar();
 					};
 				}
-
-			//}
 
 		}
 		selectedTextWindow.innerHTML += textList[i];
