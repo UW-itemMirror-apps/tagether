@@ -38,17 +38,17 @@ function comparsion(intersection, i, j, matchFolders, resultArray){
 		if(j < resultArray.length) {
 			j += 1;
 
-			console.log("j in the inner loop: %o", resultArray[j][0]);
+			//console.log("j in the inner loop: %o", resultArray[j][0]);
 
 			if(resultArray[j][3] == true){
 				var intersection = intersection;
-				console.log('continued intersection in the inner loop with stopword after: %o', intersection);
+				//console.log('continued intersection in the inner loop with stopword after: %o', intersection);
 
 				comparsion(intersection, i, j, matchFolders, resultArray);
 
 			}else {
 				var intersection = _.intersection(intersection, resultArray[j][1]);
-				console.log('continued intersection in the inner loop: %o', intersection);
+				//console.log('continued intersection in the inner loop: %o', intersection);
 
 				comparsion(intersection, i, j, matchFolders, resultArray);
 			}
@@ -56,37 +56,22 @@ function comparsion(intersection, i, j, matchFolders, resultArray){
 		}else {
 			folders = intersection;
 			folderPosition = resultArray[j][2];
-
-			// foldersWord = resultArray[j][0];
-			
-			// temp.push(foldersWord);
-			// temp.push(folders);
-			// matchFolders[folderPosition] = temp;
 			matchFolders[folderPosition] = folders;
-			console.log("matchFolders testing22222......: %o", matchFolders);
+			//console.log("matchFolders testing22222......: %o", matchFolders);
 		}
 
 	}else if(intersection.length == 0){
 		folders = resultArray[i][1];
 		folderPosition = resultArray[i][2];
-		//foldersWord = resultArray[i][0];
-
-		// temp.push(foldersWord);
-		// temp.push(folders);
-		// matchFolders[folderPosition] = temp;
 		matchFolders[folderPosition] = folders;
 
-		console.log("matchFolders testing33333......: %o", matchFolders);
+		//console.log("matchFolders testing33333......: %o", matchFolders);
 	}else{
 		folders = intersection;
 		folderPosition = resultArray[j][2];
-		//foldersWord = resultArray[j][0];
-		//temp.push(foldersWord);
-		//temp.push(folders);
-		//matchFolders[folderPosition] = temp;
 		matchFolders[folderPosition] = folders;
 
-		console.log("matchFolders testing44444......: %o", matchFolders);
+		//console.log("matchFolders testing44444......: %o", matchFolders);
 	}
 
 	return matchFolders;
