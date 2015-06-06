@@ -509,13 +509,6 @@ function createSiderbarContent(sidebarHTML) {
 	selectedTextWindow.id = "selectedTextWindow";
 	selectedTextWindow.setAttribute("contentEditable", "True");
 
-	// var okButton = document.createElement('button');
-	// okButton.innerText = "Save";
-	// okButton.id = "okButton";
-	// cancel button
-	// var cancelButton = document.createElement('button');       
-	// cancelButton.innerText="close";
-	// cancelButton.id = "closeButton";
 
 	var refreshButton = document.createElement('img');
 	var imgURL = chrome.extension.getURL("images/search.png")
@@ -589,8 +582,6 @@ function createSiderbarContent(sidebarHTML) {
 
 	sidebarHTML.appendChild(sidebarContainer);
 	sidebarHTML.appendChild(selectedTextWindow);
-	//sidebarHTML.appendChild(okButton);
-	//sidebarHTML.appendChild(cancelButton);
 
 }
 
