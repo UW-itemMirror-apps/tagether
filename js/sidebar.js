@@ -186,45 +186,22 @@ function createFolderNames(messages) {
 }
 
 function createSingleIcon(path) {
-	//var a = document.createElement('a');
 	var icon = document.createElement('img');
 	var imgURL = chrome.extension.getURL("images/folder.png");
 	icon.src = imgURL;
 	icon.id = "folderIcon";
 	var newPath = JSON.stringify(path);
-	//icon.title = path;
 	icon.setAttribute('data-paths', newPath);
-	//a.setAttribute("href", "https://www.dropbox.com/home" + path);
-	//a.target = "_blank";
-	//a.appendChild(icon);
 	return icon;
 }
 
 function createMultipleIcon(path) {
-	//console.log("what is the path: %o", path);
-	//var a = document.createElement('a');
 	var icon = document.createElement('img');
 	var imgURL = chrome.extension.getURL("images/folders.png");
 	icon.src = imgURL;
 	icon.id = "foldersIcon";
 	var newPath = JSON.stringify(path);
-	//var newPath = Array.prototype.slice.call(path);
-	//console.log("newpath is what tpye: %o", typeof newPath);
-	//icon.title = path;
 	icon.setAttribute('data-paths', newPath);
-
-
-	// var customModal = '<div class="custom-modal modal hide fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button></div><div class="modal-body"></div><div class="modal-footer"><button class="btn" data-dismiss="modal">Close</button></div></div>'
-
-
-	
-	// icon.setAttribute('onclick', 'var foldersPath = '+ path + ';console.log(foldersPath);var bigDiv = document.createElement("div");' + 'var wrapperDiv = document.createElement("div");' + 'wrapperDiv.setAttribute("style","position: absolute; left: 0px; top: 0px; background-color: rgb(255, 255, 255); opacity: 0.5; z-index: 2000; height: 1083px; width: 100%;");' + 'var iframeElement = document.createElement("iframe");' + 'iframeElement.setAttribute("style","width: 100%; height: 100%;");' + 'wrapperDiv.appendChild(iframeElement);' + 'var modalDialogParentDiv = document.createElement("div");' + 'modalDialogParentDiv.setAttribute("style","position: absolute; width: 350px; border: 1px solid rgb(51, 102, 153); padding: 10px; background-color: rgb(255, 255, 255); z-index: 2001; overflow: auto; text-align: center; top: 149px; left: 497px;");' + 'var modalDialogSiblingDiv = document.createElement("div");' + 'var modalDialogTextDiv = document.createElement("div");' + 'modalDialogTextDiv.setAttribute("style" , "text-align:center");' + 'var modalDialogTextSpan = document.createElement("span");' + 'var modalDialogText = document.createElement("strong");' + 'modalDialogText.innerHTML = "Processing...  Please Wait.";' + 'modalDialogTextSpan.appendChild(modalDialogText);' + 'modalDialogTextDiv.appendChild(modalDialogTextSpan);' + 'modalDialogSiblingDiv.appendChild(modalDialogTextDiv);' + 'for (var i=0; i<5; i++){var p = document.createElement("p");var span = document.createElement("span");span.innerText = foldersPath[i];var checkbox = document.createElement("input");checkbox.type = "checkbox";checkbox.name = "name";checkbox.value = foldersPath[i];checkbox.id = "id";checkbox.checked = true;p.appendChild(checkbox);p.appendChild(span);modalDialogSiblingDiv.appendChild(p);}' + 'modalDialogParentDiv.appendChild(modalDialogSiblingDiv);' + 'bigDiv.appendChild(wrapperDiv);' + 'bigDiv.appendChild(modalDialogParentDiv);' + 'document.body.appendChild(bigDiv);');
-
-
-	//icon.addEventListener('click', function(e){alert(e);}, false);
-	//icon.setAttribute('data-toggle', "modal");
-	//icon.setAttribute('data-target', ".multipleIcon");
-	//a.appendChild(icon);
 
 	return icon;
 }
