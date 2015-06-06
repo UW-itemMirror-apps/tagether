@@ -25,24 +25,6 @@ function execute(msg) {
 	}
 }
 
-//function for intersection
-function intersect(a, b){
-  var ai = bi= 0;
-  var intersection = [];
-
-  while( ai < a.length && bi < b.length ){
-     if      (a[ai] < b[bi] ){ ai++; }
-     else if (a[ai] > b[bi] ){ bi++; }
-     else /* they're equal */
-     {
-       intersection.push(ai);
-       ai++;
-       bi++;
-     }
-  }
-
-  return intersection;
-}
 
 
 function comparsion(intersection, i, j, matchFolders, resultArray){
