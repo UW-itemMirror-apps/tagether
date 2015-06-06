@@ -221,9 +221,6 @@ function dropboxSearch(keyword, resultSet, start, flag, charList, tab, initResul
 
 					console.log('current keyword initResult: %o', initResult);
 					
-						//console.log("charList in else function: %o", charList);
-						//console.log("mark in else function: %o", start);
-						//console.log("tab in else function: %o", tab);
 						var arr = grabword(charList, start, '');
 						var keyword = arr[0];
 						//console.log("keyword in else function: %o", keyword);
@@ -324,11 +321,7 @@ function dropboxSearch(keyword, resultSet, start, flag, charList, tab, initResul
 		}
 		
 	}
-	//var initResult = [];
 	
-	//console.log('current keyword outside client search function: %o', result);
-	//console.log('current keyword outside the closure scope: %o', keyword, resultSet, start, charList, tab, initResult);
-	//console.log('current keyword initResult outside the closure scope: %o', initResult);
 	return initResult;
 }
 
