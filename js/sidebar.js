@@ -253,14 +253,12 @@ function addModalEvent() {
 }
 
 function createModal(data, folderIcon){
-	// var temp = [];
-	// temp = data.split('",');
-	// var foldersPath = ["/2015-06, MSIM capstone, Qin Qin, Jay, shared/tagging articles, esp. for qianqian/Wm's topics/constraints & delcarative programming", "/2015-06, MSIM capstone, Qin Qin, Jay, shared/tagging articles, esp. for qianqian/Wm's topics/programming", "/2015-06, MSIM capstone, Qin Qin, Jay, shared/tagging articles, esp. for qianqian/Wm's topics/constraints & delcarative programming", "/2015-06, MSIM capstone, Qin Qin, Jay, shared/tagging articles, esp. for qianqian/Wm's topics/constraints & delcarative programming", "/2015-06, MSIM capstone, Qin Qin, Jay, shared/tagging articles, esp. for qianqian/Wm's topics/constraints & delcarative programming"];
-	console.log("passing data in the new modal: %o", data);
+	
+	//console.log("passing data in the new modal: %o", data);
 	var foldersPath = data;
 	var currentfolder = folderIcon;
-	console.log(folderIcon);
-	console.log("current folderPaths value: %o",foldersPath);
+	//console.log(folderIcon);
+	//console.log("current folderPaths value: %o",foldersPath);
 	var bigDiv = document.createElement("div");
 	var wrapperDiv = document.createElement("div");
 	wrapperDiv.setAttribute("style","position: absolute; left: 0px; top: 0px; background-color: rgb(255, 255, 255); opacity: 0.5; z-index: 2000; height: 1083px; width: 100%;");
@@ -296,14 +294,6 @@ function createModal(data, folderIcon){
 	var modalDialogSiblingDiv1 = document.createElement("div");
 	modalDialogSiblingDiv1.setAttribute("style", "padding: 15px;")
 
-	// var p = document.createElement("p");var span = document.createElement("span");span.innerText = path[i];var checkbox = document.createElement("input");checkbox.type = "checkbox";checkbox.name = "name";checkbox.value = path[i];checkbox.id = "id";checkbox.checked = true;p.appendChild(checkbox);p.appendChild(span);modalDialogSiblingDiv.appendChild(p);
-
-	// var label = document.createElement('label')
-	// label.htmlFor = "id";
-	// label.appendChild(document.createTextNode('text for label after checkbox'));
-
-	//modalDialogSiblingDiv.appendChild(p);
-	//modalDialogSiblingDiv.appendChild(label);
 
 	if(foldersPath.length< 5){
 		var length = foldersPath.length;
@@ -323,10 +313,6 @@ function createModal(data, folderIcon){
 
 	}
 
-	// for (var i=0; i<5; i++){
-	// 	var p = document.createElement("p");p.setAttribute('class', 'checkbox');var span = document.createElement("span");span.innerText = foldersPath[i]; span.setAttribute("style", "font-size: 12px");var checkbox = document.createElement("input");checkbox.type = "checkbox";checkbox.name = "name";checkbox.value = foldersPath[i];checkbox.id = "id";checkbox.checked = true;checkbox.class="form-control";var openBtn = document.createElement('a'); openBtn.setAttribute('class', 'btn btn-default pull-right'); openBtn.setAttribute('style', 'margin-top: -4%;');openBtn.href = 'https://www.dropbox.com/home' + foldersPath[i]; openBtn.innerText = 'Open'; openBtn.target = "_blank"; p.appendChild(checkbox);p.appendChild(span);p.appendChild(openBtn);modalDialogSiblingDiv1.appendChild(p);
-
-	// }
 
 	var modalDialogSiblingDiv2 = document.createElement("div");
 	modalDialogSiblingDiv2.setAttribute('style', 'padding: 15px; float: right;');
@@ -343,10 +329,6 @@ function createModal(data, folderIcon){
 	button1.id = 'cancelBox';
 	modalDialogSiblingDiv2.appendChild(button1);
 
-	// for (var i=0; i<5; i++){var p = document.createElement("p");var span = document.createElement("span");span.innerText = path[i];var checkbox = document.createElement("input");checkbox.type = "checkbox";checkbox.name = "name";checkbox.value = path[i];checkbox.id = "id";checkbox.checked = true;p.appendChild(checkbox);p.appendChild(span);modalDialogSiblingDiv.appendChild(p);}
-	//modalDialogTextDiv.appendChild(breakElement);
-	//modalDialogTextDiv.appendChild(breakElement);
-	//modalDialogTextDiv.appendChild(imageElement);
 
 	modalDialogSiblingDiv.appendChild(modalDialogTextDiv);
 	modalDialogParentDiv.appendChild(modalDialogSiblingDiv);
@@ -356,15 +338,7 @@ function createModal(data, folderIcon){
 	bigDiv.appendChild(wrapperDiv);
 	bigDiv.appendChild(modalDialogParentDiv);
 
-	// bigDiv.addEventListener('click', function(){
-	// 	if(bigDiv){
-	// 		body.remove(bigDiv);
-	// 	}
-	// }, false);
 
-
-
-	//document.body.appendChild(wrapperDiv);
 	document.body.appendChild(bigDiv);
 
 	button1.onclick = function() {
