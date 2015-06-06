@@ -226,40 +226,15 @@ function addModalEvent() {
 		});
 
 
-		
-		//var data = foldersIcon[i].dataset.paths;
-		//var array = JSON.parse(data);
 		//General solution: using closure to pass along parameter into the for loop
 		// foldersIcon[i].addEventListener('click', function(foldersIcon){
 
-			
-		// 	//console.log(this);
 		// 	return function() {
 				
 		// 		createModal(JSON.parse(foldersIcon.dataset.paths));
 		// 	}
 		// }(foldersIcon[i]));
 
-		// return function(i){
-		// 		foldersIcon[i].addEventListener('click', function(){
-		// 		createModal(array);
-		// 	});
-		// }
-		//foldersIcon[i].setAttribute('onclick', createModal(data));
-		// return (function(i, foldersIcon, array){
-		// 	foldersIcon[i].onclick = function(){
-		// 		console.log(array);
-		// 		console.log(i);
-		// 		console.log(foldersIcon[i]);
-		// 	}
-		// })(i, foldersIcon, array);
-		// foldersIcon[i].onclick = function(){
-		// 	console.log(array);
-		// 	console.log(i);
-		// 	console.log(foldersIcon[i]);
-		// 	//console.log("array in the onclick event: %o", array);
-		// 	//createModal(array);
-		// }
 	}
 
 	for(var i=0; i< folderIcon.length; i++){
