@@ -82,7 +82,7 @@ function addFolderIcon(msg) {
 	var selectedTextWindow = document.getElementById("selectedTextWindow");
 	if(!selectedTextWindow) {throw "missing selectedTextWindow";}
 
-	console.log('msg.message: %o', msg.message);
+	//console.log('msg.message: %o', msg.message);
 	var resultArray = msg.message;
 	//var length = resultArray.length;
 	var matchFolders = {};
@@ -97,23 +97,11 @@ function addFolderIcon(msg) {
 				if(resultArray[i][1].length <= 3){
 					var folders = resultArray[i][1];
 					var folderPosition = resultArray[i][2];
-					// var foldersWord = resultArray[i][0];
-					// var temp = [];
-					// temp.push(foldersWord);
-					// temp.push(folders);
-					// matchFolders[folderPosition] = temp;
+					
 					matchFolders[folderPosition] = folders;
 
-					console.log("matchFolders testing11111......: %o", matchFolders);
-					//insert single folder icon
+					//console.log("matchFolders testing11111......: %o", matchFolders);
 
-				// }else if (resultArray[i][1].length > 1 && resultArray[i][1] <= 3){
-				// 	var folders = resultArray[i][1];
-				// 	var folderPosition = resultArray[i][2];
-				// 	matchFolders[folderPosition] = folders;
-
-				// 	console.log("matchFolders testing22222......: %o", matchFolders);
-				// 	//insert multiple folders icon
 				}else {
 					var j = i+1;
 					if(j < resultArray.length) {
@@ -127,7 +115,7 @@ function addFolderIcon(msg) {
 
 						}else {
 							var intersection = _.intersection(resultArray[i][1], resultArray[j][1]);
-							console.log('first intersection in the for loop: %o', intersection);
+							//console.log('first intersection in the for loop: %o', intersection);
 
 							comparsion(intersection, i, j, matchFolders, resultArray);
 						}
@@ -136,13 +124,8 @@ function addFolderIcon(msg) {
 						var folderPosition = resultArray[i][2];
 						matchFolders[folderPosition] = folders;
 
-						console.log("matchFolders testing55555......: %o", matchFolders);
+						//console.log("matchFolders testing55555......: %o", matchFolders);
 					}
-					
-					
-
-					
-
 					
 				}
 			}
