@@ -349,7 +349,7 @@ function createModal(data, folderIcon){
 
 	button.addEventListener('click', function(currentfolder){
 		return function(){
-			console.log("currentfolder....:%o", currentfolder);
+			//console.log("currentfolder....:%o", currentfolder);
 
 			var modalBox = document.getElementById('modalBox');
 			var checkedFolders = modalBox.querySelectorAll('input[type="checkbox"]:checked');
@@ -363,39 +363,13 @@ function createModal(data, folderIcon){
 			var choosePath = JSON.stringify(temp);
 			currentfolder.setAttribute('data-paths', choosePath);
 
-			console.log("temp array in modal: %o", temp);
+			//console.log("temp array in modal: %o", temp);
 
 			if(bigDiv){
 				bigDiv.parentNode.removeChild(bigDiv);
 			}
 		}
 	}(currentfolder));
-	// button.onclick = function() {
-	// 	console.log("currentfolder....:%o", currentfolder);
-	// 	var modalBox = document.getElementById('modalBox');
-	// 	var checkedFolders = modalBox.querySelectorAll('input[type="checkbox"]:checked');
-	// 	console.log(checkedFolders);
-
-	// 	var temp = [];
-	// 	for (var i = 0; i < checkedFolders.length; i++) {
-	// 	  temp.push(checkedFolders[i].value);
-	// 	}
-
-	// 	console.log("temp array in modal: %o", temp);
-
-	// 	var choosePath = JSON.stringify(temp);
-	// 	//var newPath = Array.prototype.slice.call(path);
-	// 	//console.log("newpath is what tpye: %o", typeof newPath);
-	// 	//icon.title = path;
-	// 	currentfolder.setAttribute('data-paths', choosePath);
-
-	// 	console.log("New currentfolder....:%o", currentfolder);
-
-	// 	if(bigDiv){
-	// 		bigDiv.parentNode.removeChild(bigDiv);
-	// 	}
-
-	// }
 
 }
 
@@ -426,9 +400,7 @@ function toggleSidebar () {
 	if(!(document.querySelector('#spinnerImage'))){
 		addSpinner();
 	}
-	
-	//createBootstrapModal();
-	//createModal();
+
 	if(sidebarHTML.style.display === 'none') {
 		sidebarHTML.style.display = 'inline';
 	} else {
